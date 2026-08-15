@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umar — Brand Identity &amp; Logo Design</title>
+    <meta
+      name="description"
+      content="Umar — brand identity and logomark design. Selected identity systems across print, product, and screen."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- background grid texture -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+      <a href="#top" class="nav__mark" aria-label="Home"
+        >Umardesign<span>.</span></a
+      >
+      <nav class="nav__links">
+        <a href="#home">Home</a>
+
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav__cta" style="color: black">Contact</a>
+      </nav>
+      <button
+        class="nav__burger"
+        id="burger"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home">
+        <svg
+          class="hero__blueprint"
+          id="blueprint"
+          viewBox="0 0 1200 800"
+          preserveAspectRatio="xMidYMid slice"
+          aria-hidden="true"
+        >
+          <!-- construction grid: circles, guide lines, golden-ratio-ish framework -->
+          <g class="bp-draw">
+            <circle cx="600" cy="400" r="260" />
+            <circle cx="600" cy="400" r="180" />
+            <circle cx="600" cy="400" r="90" />
+            <line x1="600" y1="60" x2="600" y2="740" />
+            <line x1="260" y1="400" x2="940" y2="400" />
+            <line x1="370" y1="140" x2="830" y2="660" />
+            <line x1="830" y1="140" x2="370" y2="660" />
+            <rect x="420" y="220" width="360" height="360" />
+            <circle cx="600" cy="400" r="360" stroke-dasharray="4 10" />
+          </g>
+        </svg>
+
+        <div class="hero__orbit" id="orbit" aria-hidden="true">
+          <div class="orbit__ring">
+            <div class="orbit__chip">
+              <img src="assets/logos/7rabbit-mark.png" alt="" />
+            </div>
+            <div class="orbit__chip">
+              <img src="assets/logos/fastcode-mark.png" alt="" />
+            </div>
+            <div class="orbit__chip">
+              <img src="assets/logos/jewel-mark.png" alt="" />
+            </div>
+            <div class="orbit__chip">
+              <img src="assets/logos/knightx-mark.png" alt="" />
+            </div>
+            <div class="orbit__chip">
+              <img src="assets/logos/qastra-mark.png" alt="" />
+            </div>
+            <div class="orbit__chip">
+              <img src="assets/logos/starvolt-mark.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow" data-reveal>Brand Identity &amp; Logo Design</p>
+          <h1 class="hero__title">
+            <span class="line"
+              ><span class="word">Logos</span> <span class="word">are</span>
+              <span class="word">contracts.</span></span
+            >
+            <span class="line line--accent"
+              ><span class="word">I</span> <span class="word">draw</span>
+              <span class="word">the</span> <span class="word">fine</span>
+              <span class="word">print.</span></span
+            >
+          </h1>
+          <p class="hero__sub" data-reveal>
+            Identity systems — mark, wordmark, and every place a brand actually
+            has to show up.
+          </p>
+          <div class="hero__actions" data-reveal>
+            <a href="#work" class="btn btn--primary">View the work</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ============ WORK ============ -->
+      <section class="work" id="work">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Selected Work</p>
+          <h2>Six marks, systemized.</h2>
+        </div>
+
+        <div class="grid" id="workGrid">
+          <!-- cards injected by script.js from PROJECTS data -->
+        </div>
+      </section>
+
+      <!-- ============ PROCESS ============ -->
+      <section class="process" id="process">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Process</p>
+          <h2>From grid to ground.</h2>
+        </div>
+        <div class="process__grid">
+          <article class="process__step" data-reveal>
+            <span class="process__mono">MARK</span>
+            <h3>Construct</h3>
+            <p>
+              Every symbol starts as a grid — circles, angles, and a ratio that
+              holds it together long after the guides are deleted.
+            </p>
+          </article>
+          <article class="process__step" data-reveal>
+            <span class="process__mono">SYSTEM</span>
+            <h3>Extend</h3>
+            <p>
+              The mark earns a wordmark, a type scale, and a color logic that
+              has to survive black-and-white before it earns color.
+            </p>
+          </article>
+          <article class="process__step" data-reveal>
+            <span class="process__mono">APPLY</span>
+            <h3>Stress-test</h3>
+            <p>
+              Business card, billboard, app icon, apparel tag. If the identity
+              only works on a screen, it isn't finished yet.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="about">
+        <div class="about__inner">
+          <div class="about__text" data-reveal>
+            <p class="eyebrow">About</p>
+            <h2>Umar</h2>
+            <p>
+              Hi, I’m Umar, a logo, visual identity, and brand designer based in
+              Lahore. I focus on understanding the brand, its audience, and what
+              makes it different, then translate those ideas into a visual
+              identity.<br />
+              Let’s turn your brand idea into a visual identity people remember.
+            </p>
+            <div class="chips">
+              <span>Logo &amp; Mark Design</span>
+              <span>Typography Systems</span>
+              <span>Visual Identity</span>
+              <span>Mockup &amp; Application</span>
+              <!-- <span>Print &amp; Packaging</span> -->
+              <span>Social &amp; Digital</span>
+            </div>
+          </div>
+          <div class="about__grid" data-reveal aria-hidden="true">
+            <img
+              class="plate-light"
+              src="assets/logo/starvolt-mark.png"
+              alt=""
+            />
+            <img
+              class="plate-light"
+              src="assets/profile pic/pic-1.png"
+              alt=""
+            />
+            <img
+              class="plate-light"
+              src="assets/logo/knightx-mark.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
+        <div class="contact__inner" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2>Have a brand that needs a mark?</h2>
+          <a
+            href="mailto:hello.umardesignr@gmail.com"
+            target="_blank"
+            class="contact__email"
+            >hello.umardesignr@gmail.com</a
+          >
+          <div class="contact__socials">
+            <a href="https://www.instagram.com/umardesignr/" target="_blank"
+              >Instagram</a
+            >
+            <a href="https://x.com/umardesignr_" target="_blank">Twitter</a>
+            <a href="https://pk.linkedin.com/in/umardesignr" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span
+        >© <span id="year"></span> Umar. All marks shown are original design
+        work.</span
+      >
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <!-- ============ PROJECT MODAL ============ -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal__backdrop" id="modalBackdrop"></div>
+      <div
+        class="modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button class="modal__close" id="modalClose" aria-label="Close">
+          ✕
+        </button>
+        <div class="modal__head">
+          <img id="modalWord" class="modal__word" src="" alt="" />
+          <p class="modal__category" id="modalCategory"></p>
+          <h3 id="modalTitle" class="sr-only"></h3>
+        </div>
+        <div class="modal__gallery" id="modalGallery"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
